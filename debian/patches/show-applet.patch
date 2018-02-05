@@ -1,0 +1,20 @@
+Description: show nm-applet in manokwari
+ network-manager-applet (1.8.10-2blankon1) uluwatu; urgency=medium
+ .
+   * New upstream release
+   * Add patch for showing in Manokwari
+Author: antosamalona <ansamsoftdev@gmail.com>
+
+---
+
+--- network-manager-applet-1.8.10.orig/nm-applet.desktop.in
++++ network-manager-applet-1.8.10/nm-applet.desktop.in
+@@ -6,7 +6,7 @@ Exec=nm-applet
+ Terminal=false
+ Type=Application
+ NoDisplay=true
+-NotShowIn=KDE;GNOME;
++NotShowIn=KDE;
+ X-GNOME-Bugzilla-Bugzilla=GNOME
+ X-GNOME-Bugzilla-Product=NetworkManager
+ X-GNOME-Bugzilla-Component=nm-applet
